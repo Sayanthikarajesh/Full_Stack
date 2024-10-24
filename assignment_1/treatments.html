@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Treatment Options</title>
+    <style>
+        
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 30px;
+        }
+        /* Grid layout for treatments */
+        .treatment-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three columns per row */
+            gap: 20px; /* Space between the boxes */
+            margin-bottom: 30px;
+        }
+
+        .treatment {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #fff;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .treatment h2 {
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .treatment p {
+            margin: 10px 0;
+        }
+
+        /* Hover effect for treatment boxes */
+        .treatment:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive design adjustments */
+        @media (max-width: 992px) {
+            .treatment-container {
+                grid-template-columns: repeat(2, 1fr); /* Two columns for tablets and medium screens */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .treatment-container {
+                grid-template-columns: 1fr; /* Single column for small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Ayurvedic Healing Center Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutayurveda.html">About Ayurveda</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="treatments.html">Treatments</a></li>
+                <li><a href="consultation.html">Consultations</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="homemeds.html">Home Remadies</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <h1>Treatment Option</h1>
+
+
+    <div class="treatment-container">
+        <!-- Treatment Boxes -->
+        <div class="treatment">
+            <h2>Herbal Medicine</h2>
+            <p>Herbal medicine uses plants and plant extracts to treat various health conditions. It is often customized based on the individual's constitution and health needs.</p>
+        </div>
+
+        <div class="treatment">
+            <h2>Panchakarma</h2>
+            <p>Panchakarma is a detoxification process that involves five therapeutic treatments. It is designed to cleanse the body of toxins and restore balance.</p>
+        </div>
+
+        <div class="treatment">
+            <h2>Dietary Therapy</h2>
+            <p>Dietary therapy focuses on personalized nutrition based on your dosha. It emphasizes whole foods and balancing the body's energies.</p>
+        </div>
+
+        <div class="treatment">
+            <h2>Aromatherapy</h2>
+            <p>Aromatherapy utilizes essential oils from plants for therapeutic benefits. It can enhance emotional and physical well-being through scent.</p>
+        </div>
+
+        <div class="treatment">
+            <h2>Yoga and Meditation</h2>
+            <p>Yoga and meditation promote physical and mental health through postures, breathing techniques, and mindfulness practices.</p>
+        </div>
+
+        <div class="treatment">
+            <h2>Ayurvedic Massage</h2>
+            <p>Ayurvedic massage incorporates herbal oils and specific techniques to promote relaxation and improve circulation.</p>
+        </div>
+
+        <div class="treatment">
+            <h2>Rejuvenation Therapy</h2>
+            <p>This therapy focuses on revitalizing the body and mind, often involving treatments that promote longevity and vitality.</p>
+        </div>
+
+        <div class="treatment">
+            <h2>Akshitarpana</h2>
+            <p>An ancient Ayurvedic remedy for ailments related to the eyes. This treatment is known to cure glaucoma, night blindness and other eye related complaints.</p>
+        </div>
+
+        <div class="treatment">
+            <h2>Consultation and Assessment</h2>
+            <p>An initial consultation assesses your unique constitution and health needs, guiding the selection of appropriate treatments.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

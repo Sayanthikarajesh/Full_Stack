@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ayurvedic Healing Center - Discover natural remedies and holistic treatments for a balanced life.">
+    <title>Ayurvedic Healing Center</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <style>
+        
+        /* Hero Section */
+        .hero {
+            background: url('index.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+            padding: 25px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary {
+            background-color: #4CAF50;
+            color: #fff;
+            margin-right: 10px;
+        }
+
+        .btn-secondary {
+            background-color: #fff;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+        }
+
+        .btn-primary:hover, .btn-secondary:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Introduction Section */
+        .intro {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .intro h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .intro .btn-primary {
+            margin-top: 20px;
+        }
+
+        /* Featured Products Section */
+        .featured {
+            padding: 50px 20px;
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+
+        .featured h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .product {
+            display: inline-block;
+            width: 30%;
+            margin: 15px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product h3 {
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .product .btn-secondary {
+            padding: 10px 20px;
+        }
+
+        /* Why Choose Us Section */
+        .why-choose-us {
+            padding: 50px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .why-choose-us h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .reasons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .reason {
+            width: 30%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .reason h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .reason p {
+            color: #666;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 50px 20px;
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .testimonial {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 40%;
+        }
+
+        .testimonial p {
+            color: #666;
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 50px 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .cta p {
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 10px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer .newsletter input {
+            padding: 10px;
+            border: none;
+            border-radius: 25px;
+            width: 200px;
+        }
+
+        footer .newsletter button {
+            padding: 10px 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            margin-left: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .product, .reason, .testimonial {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .reasons {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Ayurvedic Healing Center Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutayurveda.html">About Ayurveda</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="treatments.html">Treatments</a></li>
+                <li><a href="consultation.html">Consultations</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="homemeds.html">Home Remadies</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Embrace Wellness with Authentic Ayurvedic Solutions</h1>
+            <p>Personalized care for body, mind, and soul, rooted in centuries-old wisdom.</p>
+            <a href="treatments.html" class="btn-primary">Explore Treatments</a>
+            <a href="consultation.html" class="btn-secondary">Book a Consultation</a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <h2>What is Ayurveda?</h2>
+        <p>Ayurveda is an ancient Indian healing system that focuses on balancing the body, mind, and spirit through natural treatments. With time-tested remedies, personalized care, and holistic healing, Ayurveda can transform your well-being.</p>
+        <a href="aboutayurveda.html" class="btn-primary">Learn More About Ayurveda</a>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <h2>WELCOME</h2>
+        <h2>Why Choose Ayurvedic Healing Center?</h2>
+        <div class="reasons">
+            <div class="reason">
+                <h3>Natural, Organic Products</h3>
+                <p>We use only the finest, ethically sourced Ayurvedic herbs and ingredients.</p>
+            </div>
+            <div class="reason">
+                <h3>Expert Practitioners</h3>
+                <p>Our team consists of experienced Ayurvedic doctors and therapists.</p>
+            </div>
+            <div class="reason">
+                <h3>Personalized Healing</h3>
+                <p>Tailored treatments and consultations for your unique body constitution (Dosha).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"The detox program completely transformed my energy levels. I feel lighter, healthier, and more balanced than ever!" – Ayesha K.</p>
+        </div>
+        <div class="testimonial">
+            <p>"Abhyanga therapy was a deeply relaxing experience. Highly recommended!" – Ravi S.</p>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <h2>Book a Free Consultation</h2>
+        <h3>Dr. Nayana B</h3>
+        <p>Unsure of where to start on your Ayurvedic journey? Book a free consultation with our experts and discover a personalized path to well-being.</p>
+        <a href="contact.html" class="btn-primary">Book Now</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-links">
+            <a href="aboutus.html">About Us</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <br>
+        <div class="contact-info">
+            <p>Address: Palakkad, Kerala</p>
+            <br>
+            <p>Phone: +91-7592014768, +91-8281315589</p>
+            <br>
+            <p>Email: sayanthika04@gmail.com</p>
+        </div>
+        <br>
+        <div class="newsletter">
+            <h3>Sign Up for Health Tips & Updates</h3>
+            <br>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+
+</body>
+</html>

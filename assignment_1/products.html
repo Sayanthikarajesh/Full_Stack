@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Page</title>
+    <style>
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 30px;
+        }
+        /* Product grid */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            width: 30%; /* Set width to create three products per row */
+            box-sizing: border-box;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product h2 {
+            font-size: 1.5em;
+            color: #4CAF50;
+            margin-top: 10px;
+        }
+
+        .product p {
+            margin: 10px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #333;
+        }
+        .price-btn {
+        background-color: #4CAF50; /* Initial background color */
+        border: none;
+        color: white;
+        padding: 15px 32px; /* Increase padding to make the button larger */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px; /* Text size */
+        border-radius: 8px; /* Rounded corners */
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+        }
+
+        .price-btn:hover {
+            background-color: #45a049; /* Change background color on hover */
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+
+        .price-btn p {
+            margin: 0; /* Remove default margin */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Ayurvedic Healing Center Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutayurveda.html">About Ayurveda</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="treatments.html">Treatments</a></li>
+                <li><a href="consultation.html">Consultations</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="homemeds.html">Home Remadies</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Our Products</h1>
+
+    <div class="products">
+        <div class="product">
+            <img src="oil.jpeg" alt="Massage oil">
+            <h2> Ayurvedic Massage Oil</h2>
+            <p>Infused with therapeutic herbs like Ashwagandha, Brahmi, and Bala, this massage oil promotes deep relaxation, relieves stress, and enhances circulation.</p>
+            <button class="price-btn"><p class="price">Rs 250.00</p></button>
+        </div>
+
+        <div class="product">
+            <img src="detox.jpeg" alt="Detox Kit">
+            <h2>Detox Kit</h2>
+            <p>A comprehensive detox kit designed to cleanse your body from toxins. It includes herbal supplements and detoxifying teas that restore balance.</p>
+            <button class="price-btn"><p class="price">Rs 500.00</p></button>
+        </div>
+
+        <div class="product">
+            <img src="tea.jpeg" alt="Herbal Tea">
+            <h2>Herbal Tea</h2>
+            <p>A soothing blend of Ayurvedic herbs like Tulsi, Ginger, and Licorice. Helps boost immunity, promote digestion, and relieve stress.</p>
+            <button class="price-btn"><p class="price">Rs 100.00</p></button>
+        </div>
+
+        <div class="product">
+            <img src="soap.jpeg" alt="Sandalwood Soap">
+            <h2>Sandalwood Soap</h2>
+            <p>Enriched with the calming properties of sandalwood, this soap gently cleanses and hydrates the skin, treating acne and skin irritations.</p>
+            <button class="price-btn"><p class="price">Rs 50.00</p></button>
+        </div>
+
+        <div class="product">
+            <img src="facewash.jpeg" alt="Herbal Face Wash">
+            <h2>Herbal Face Wash</h2>
+            <p>A refreshing face wash formulated with Neem, Turmeric, and Aloe Vera. Purifies the skin, removes impurities, and helps control acne.</p>
+            <button class="price-btn"><p class="price">Rs 170.00</p></button>
+        </div>
+
+        <div class="product">
+            <img src="tablets.jpeg" alt="Triphala Supplement">
+            <h2> Triphala Supplement</h2>
+            <p>A traditional Ayurvedic supplement made from three fruits: Amalaki, Bibhitaki, and Haritaki. Known for its powerful digestive and detoxifying properties.</p>
+            <button class="price-btn"><p class="price">Rs 150.00</p></button>
+        </div>
+
+        <div class="product">
+            <img src="facialoil.jpeg" alt="Kumkumadi Tailam (Facial Oil)">
+            <h2>Kumkumadi Tailam (Facial Oil)</h2>
+            <p>A luxurious facial oil made from saffron, sandalwood, and other Ayurvedic herbs. Brightens the complexion and reduces pigmentation.</p>
+            <button class="price-btn"><p class="price">Rs. 300.00</p></button>
+        </div>
+
+        <div class="product">
+            <img src="hairoil.jpeg" alt="Ayurvedic Hair Oil">
+            <h2>Ayurvedic Hair Oil</h2>
+            <p>Infused with herbs like Bhringraj, Amla, and Hibiscus, it strengthens hair roots, promotes hair growth, and reduces hair fall.</p>
+            <button class="price-btn"><p class="price">Rs 160.00</p></button>
+        </div>
+
+        <div class="product">
+            <img src="chyawanprash.jpg" alt="Chyawanprash">
+            <h2>Chyawanprash</h2>
+            <p>A traditional Ayurvedic herbal jam made from over 40 rejuvenating herbs, including Amla and Ashwagandha. Known for boosting immunity and vitality.</p>
+            <button class="price-btn"><p class="price">Rs 180.00</p></button>
+        </div>
+    </div>
+</body>
+</html>
